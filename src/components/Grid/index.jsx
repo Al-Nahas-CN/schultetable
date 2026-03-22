@@ -24,7 +24,7 @@ export const Grid = ({ data, current, setCurrent, started, setStarted }) => {
     }, [setCurrent, enabled]);
 
     return (
-        <div className='grid grid-cols-5 gap-4'>
+        <div className='grid grid-cols-5 gap-2 sm:gap-4 '>
             {data.map((num, i) => (
                 <Cell key={i} value={num} onCellClick={handleCellClick} disabled={!enabled} />
             ))}

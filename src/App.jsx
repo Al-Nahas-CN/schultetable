@@ -48,17 +48,17 @@ function App() {
     <>
       <h1 className='text-2xl font-bold text-center'>Schulte Table</h1>
 
-      <div className="w-[500px] mx-auto">
+      <div className="w-full px-5 sm:w-[400px] md:w-[500px] mx-auto">
         <div className="flex justify-between mb-3">
           <h5 className='text-md font-regular'>{finished ? 'Game Over' : `Next: ${current}`}</h5>
           <h5 className='text-md font-regular'>Time: {(time / 1000).toFixed(2)}</h5>
         </div>
-        <div className=' p-5 bg-gray-200/5 rounded-lg'>
+        <div className=' p-3 sm:p-5 bg-gray-200/5 rounded-lg'>
           <Grid data={grid} current={current} setCurrent={setCurrent} started={started} setStarted={setStarted} />
         </div>
       </div>
 
-      {finished && (
+      {started && (
         <div className='flex justify-center mt-5'>
           <button onClick={restartGame} className='bg-gray-900 text-white px-5 py-2 rounded-lg cursor-pointer border'>Restart</button>
         </div>

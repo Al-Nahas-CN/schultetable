@@ -18,7 +18,7 @@ A Schulte Table is a grid with randomly distributed numbers. The objective of th
 * [Tailwind CSS](https://tailwindcss.com/)
 
 ## 🚀 Getting Started
-
+ 
 To get a local copy up and running, follow these simple steps:
 
 ### Prerequisites
