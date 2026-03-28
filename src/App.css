@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+.game-base.easy .cell-custom.selected {
+  @apply bg-gray-700 text-gray-500 pointer-events-none;
+}
+
+.button-custom {
+  @apply bg-gray-600 hover:bg-gray-700 text-white px-5 py-2 rounded-lg cursor-pointer border border-gray-600 max-w-32 transition-all duration-200 ease-in-out;
+}
+
+.cell-custom {
+  @apply bg-gray-500 hover:bg-white transition-colors text-white hover:text-gray-500 p-3 sm:p-5 rounded-lg text-center cursor-pointer;
+}
